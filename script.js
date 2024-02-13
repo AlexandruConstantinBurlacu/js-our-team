@@ -1,4 +1,5 @@
-// creazione array con le informazioni fornite
+// MILESTONE 0:
+// Creare l’array di oggetti con le informazioni fornite.
 
 const teamMembers = [
     {nome: "Wayne Barnett", ruolo: "Founder & CEO", foto: "img/wayne-barnett-founder-ceo.jpg"},
@@ -9,4 +10,10 @@ const teamMembers = [
     {nome: "Barbara Ramos", ruolo: "Graphic Designer", foto: "img/barbara-ramos-graphic-designer.jpg"},
 ]
 
-console.log(teamMembers);
+// MILESTONE 1:
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+for(let i = 0; i < teamMembers.length; i++) {
+    const member = teamMembers[i];
+    console.log(`Nome: ${member.nome}, Ruolo: ${member.ruolo}, Foto: ${member.foto}`);
+}
